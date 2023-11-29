@@ -111,7 +111,7 @@ footer {
         background-position: center center;
         background-size: cover;
         color: var(--pri-white);
-        margin: 3rem 4.5rem 0;
+        margin: 3rem 4rem 0;
     }
     
     section {
@@ -121,7 +121,7 @@ footer {
     }
 
     .hero-image {
-        width: 55%;
+        width: 60%;
         height: auto;
         margin: 6rem 3rem 2rem 0;
     }
@@ -142,11 +142,13 @@ footer {
         text-align: left;
         font-size: 38px;
         font-weight: 600;
+        font-kerning: normal;
     }
 
     p {
         text-align: left;
         font-size: 18px;
+        font-kerning: normal;
     }
 
     button {
