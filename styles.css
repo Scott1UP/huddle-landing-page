@@ -12,7 +12,6 @@ figure, blockquote, dl, dd {
 body {
     font-size: 15px;
     font-family: 'Poppins';
-    background-color: var(--pri-violet);
     background: no-repeat url(./images/bg-mobile.svg) var(--pri-violet);
     color: var(--pri-white);
     margin: 2rem 2.5rem;
@@ -31,13 +30,18 @@ header {
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
 .hero-image {
     width: 100%;
     margin: 4rem 0;
+}
+
+.text-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -100,3 +104,67 @@ footer {
     border-color: hsl(300, 82%, 58%);
 }
 
+@media screen and (min-width: 1024px){
+    body {
+        height: 100dvh;
+        background: no-repeat url(./images/bg-desktop.svg) var(--pri-violet);
+        background-position: center center;
+        background-size: cover;
+        color: var(--pri-white);
+        margin: 3rem 4.5rem 0;
+    }
+    
+    section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 55%;
+        height: auto;
+        margin: 6rem 3rem 2rem 0;
+    }
+
+    .logo {
+        width: auto;
+        height: 52px;
+    }
+
+    .text-and-button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 480px;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 1rem 4.5rem;
+        box-shadow: 0px 8px 8px hsla(257, 40%, 28%, 0.502);
+    }
+
+    footer {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+    
+    .fa {
+        width: 18px;
+        height: 18px;
+        padding: 12px;
+        font-size: 22px;
+      }
+}
